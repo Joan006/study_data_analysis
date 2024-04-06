@@ -17,3 +17,10 @@ new_row = pd.Series({"Nombre": "Pedro", "Edad":45, "Ciudad":"Mex", "Puntuacion":
 df_data = pd.concat([df_data, new_row.to_frame().T], ignore_index=True)
 print(df_data)
 
+"""
+pd.concat([]) - recibe una lista de los elementos que deseas agregar 
+.T - Transpone el df - a lo contrario , (columna - fila y Viceversa)
+ignore_index= - lo que hace True - adaptarse al index del df al que se agrega -
+                            false - sigue con el indew del df 
+"""
+
